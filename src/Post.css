@@ -1,0 +1,94 @@
+.post{
+    max-width: 600px;
+    background-color: white;
+    margin: auto;
+    border: 1px solid lightgray;
+    border-radius: 1%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post__image{
+    width: 100%;
+    object-fit: contain;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.post__text{
+    font-weight: normal;
+    padding: 10px;
+    padding-top: 0;
+    padding-left: 15px;
+    line-height: 1.1rem;
+}
+
+.post__header {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+
+
+.post__avatar{
+    margin-right: 10px;
+}
+
+.post__header .MoreHorizIcon {
+    position: absolute;
+    left: 67%;
+}
+
+
+.likeShare{
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.likeShare-item{
+    margin-right: 10px;
+}
+
+.likeShare-item-save{
+    position: relative;
+    left: 73%;
+}
+
+.likeShare-item:hover{
+    color: #df0a5c;
+}
+
+.likeShare-item-save:hover{
+    color: #df0a5c;
+}
+
+@media (max-width: 600px){
+    .post{
+        width: 95%;
+    }
+    .post__header .MoreHorizIcon {
+        
+        left: 87%;
+        
+    }
+
+    .likeShare{
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .likeShare-item-save{
+        left: 68%;
+    }
+}
