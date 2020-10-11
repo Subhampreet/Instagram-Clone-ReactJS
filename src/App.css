@@ -10,8 +10,8 @@
 .app__header{
   background-color: white;
   object-fit: contain;
-  padding-left: 5%;
-  padding-right: 15px;
+  padding-left: 75px;
+  padding-right: 75px;
   padding-top: 5px;
   border-bottom: 1px solid lightgray;
   display: flex;
@@ -25,7 +25,7 @@
 .searchForm{
   position: relative;
   margin: auto;
-  width: 30%;
+  /* width: 30%; */
 }
 
 input{
@@ -36,7 +36,7 @@ input{
   border-radius: 3%;
 }
 
-input::placeholder{
+.searchBarInput::placeholder{
   text-align: center;
   letter-spacing: 0.04rem;
   font-size: 12px;
@@ -53,8 +53,96 @@ input::placeholder{
   top: 3px;
 }
 
-@media (max-width: 800px){
-  .searchForm{
+
+.modal__headerImage{
+  width: 150px;
+}
+
+.app__signup{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.signup_input{
+  /* margin-top: 20px; */
+}
+
+.signup_input::placeholder{
+  text-align: left !important;
+  font-size: 17px !important;
+  letter-spacing: 0.1rem;
+}
+
+.signInButton{
+  right: 10px;
+}
+
+
+.signInLabelImg{
+  width: 70px;
+}
+
+.signInLabelText{
+  font-size: 11px;
+  text-align: justify;
+  line-height: 0.7rem;
+  letter-spacing: 0.01rem;
+  width: 95%;
+}
+
+.signInLabel{
+  display: flex;
+  align-items: center;
+}
+
+.header_icons{
+  position: absolute;
+  right: 19%;
+}
+
+.header_icon:first-child{
+  color: #e41c47;
+}
+
+.header_icon{
+  margin-right: 10px;
+  color: #252222;
+}
+
+.header_icon:hover{
+  color: #e41c47;
+}
+
+@media (max-width: 1320px){
+  .header_icons{
     display: none;
   }
 }
+
+
+@media (max-width: 800px){
+  .app__header{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .searchForm{
+    display: none;
+  }
+
+  .signupButton{
+    position: relative;
+    /* float: right; */
+    left: 28%;
+  }
+
+  .signOutButton{
+    left: 55%;
+  }
+
+}
+
+
+

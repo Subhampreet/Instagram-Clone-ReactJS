@@ -9,7 +9,7 @@ import NearMeOutlinedIcon from '@material-ui/icons/NearMeOutlined';
 
 import TurnedInNotOutlinedIcon from '@material-ui/icons/TurnedInNotOutlined';
 
-function Post({username, caption, imageUrl}) {
+function Post({username, caption, imageUrl, avatar}) {
   return (
     <div className="post">
       {/* header => avatar + username */}
@@ -17,7 +17,7 @@ function Post({username, caption, imageUrl}) {
         <Avatar
           className="post__avatar"
           alt="subhampreet"
-          src="/images/avatar.jpg"
+          src={avatar}
         />
 
         <h3>{username}</h3>
