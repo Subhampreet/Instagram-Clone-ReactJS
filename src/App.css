@@ -8,6 +8,8 @@
 }
 
 .app__header{
+  position: sticky;
+  top: 0;
   background: white;
   object-fit: contain;
   padding-left: 75px;
@@ -16,6 +18,7 @@
   border-bottom: 1.3px solid lightgray;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 
 .app__header .app__headerImage {
@@ -124,11 +127,14 @@ input{
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
-    height: 250px;
+    /* height: 250px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    padding-bottom: 25px;
+    padding-top: 20px;
+
 }
 
 .upload_message h3{
@@ -143,12 +149,13 @@ input{
   width: 95%;
   margin: auto;
   text-align: justify;
+  line-height: 1.3rem;
 }
 
 .upload_signInButton{
   width: 100px;
-  margin-top: 20px;
   align-self: center;
+  top: 8px;
   /* top: 10px; */
 }
 
@@ -185,7 +192,6 @@ input{
 @media (max-width: 600px){
   .upload_message{
       width: 90%;
-      height: 275px;
   }
 
   

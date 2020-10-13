@@ -31,22 +31,25 @@ function InstaEmbed() {
       <img src="/images/header2.png" className="embed_image" />
       <div className="embedText">
         <h4>Hello Peeps 👋 !!!</h4>
+        <h4>Welcome to Instagram Clone App ⚡ !!!</h4>
+
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat💖.
+          Instagram is an American photo and video sharing social networking service owned by Facebook. This project is a Clone of the original Instagram UI. This Project provides some basic features, similar to the original application.
+          <br />
+          <br />
+          <b>P.S.</b> This project has been developed for learning purposes, and it has nothing to do with the original Application.
           <br />
           <br />
           <b>Features : </b>
           <ul>
-            <li>nisi ut aliquip ex ea commodo consequat</li>
-            <li>nisi ut aliquip ex ea commodo consequat</li>
-            <li>nisi ut aliquip ex ea commodo consequat</li>
-            <li>nisi ut aliquip ex ea commodo consequat</li>
+            <li>User Authentication : Sign In and Sign Up</li>
+            <li>Image Uploading for creating new Posts</li>
+            <li>User can add Comments to the Posts</li>
+            <li>An Awesome User-Interface</li>
           </ul>
           <br />
         </p>
+        <h4>Hope you have a great time, exploring the application in and out ✌ !!!</h4>
       </div>
 
       <div className="footer">

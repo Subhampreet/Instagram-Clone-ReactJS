@@ -251,8 +251,10 @@ function App() {
       ) : (
       <div className="upload_message" >
         <h3>Login to Create a Post 🚀 !!!</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error ut perspiciatis unde omnis iste natus error perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error ut <br /><br />
-        perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error utperspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error ut
+        <p><b>Welcome to Instagram Clone App!</b> To Create a new Post, the user has to sign up for the apllication first using any mail ID (Works with an Invalid Mail ID too). For example : "xyz@gmail.com". User can Sign-In using the same credentials again and again. <br /><br />
+        <b>For Creating a Post</b> you need to sign-in first. Then click the "UPLOAD PHOTO" Button. Select a Photo from your device, add a suitable caption to the Post, and then click "CREATE POST" Button. Wait till the photo gets uploaded. And then BOOM!!! Your Post has been created(Scroll a bit if you don't find your post at the top).
+        <br /><br />
+        <b>Hope you have a Great time exploring the Application 💖 !!!</b>
         </p>
         <Button onClick={() => setOpenSignIn(true)} className="upload_signInButton" color="secondary" variant="contained" >Sign In</Button>
 
@@ -264,10 +266,12 @@ function App() {
       {posts.map(({ id, post }) => (
         <Post
           key={id}
+          postId = {id}
           username={post.username}
           caption={post.caption}
           imageUrl={post.imageUrl}
           avatar={post.avatar}
+          user = {user}
         />
       ))}
 

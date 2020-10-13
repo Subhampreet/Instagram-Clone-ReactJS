@@ -29,7 +29,7 @@ function Suggested() {
   
       <h4>
         {" "}
-        <InstagramIcon className="suggested_icon" /> Sugestions For You
+        <InstagramIcon className="suggested_icon" /> Suggestions For You
       </h4>
       <p>
         Sed ut perspiciatis unde omnis iste natus err sit voluptatem iste
@@ -141,6 +141,30 @@ function Suggested() {
           <h5>cristiano</h5>
         </div>
         <a href="https://www.instagram.com/cristiano/">
+          <Button
+            size="small"
+            
+            color="secondary"
+            className="footer_follow"
+          >
+            Follow
+          </Button>
+        </a>
+      </div>
+
+
+      <div className="footer">
+        <Avatar
+          className="avatar"
+          alt="gameofthrones"
+          src="https://www.skinillustrator.com/wp-content/uploads/2018/09/got-logo.jpg"
+          className={classes.large}
+        />
+
+        <div className="footer_content">
+          <h5>gameofthrones</h5>
+        </div>
+        <a href="https://www.instagram.com/gameofthrones/">
           <Button
             size="small"
             

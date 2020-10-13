@@ -31,7 +31,7 @@ function Story() {
           src="/images/avatar.jpg"
           className={classes.large}
         />
-        <h6>Subhampreet</h6>
+        <h6>subhampreet</h6>
       </div>
 
       <div className="story__item">
@@ -41,7 +41,7 @@ function Story() {
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ7X1a5uXND5eV1xt1ihm1RqafYqZ2_iFAWeg&usqp=CAU"
           className={classes.large}
         />
-        <h6>Subhampreet</h6>
+        <h6>subhampreet</h6>
       </div>
 
       <div className="story__item">
@@ -51,7 +51,7 @@ function Story() {
           src="https://miro.medium.com/max/2048/0*0fClPmIScV5pTLoE.jpg"
           className={classes.large}
         />
-        <h6>Subhampreet</h6>
+        <h6>subhampreet</h6>
       </div>
 
       <div className="story__item">
@@ -61,7 +61,7 @@ function Story() {
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&usqp=CAU"
           className={classes.large}
         />
-        <h6>Subhampreet</h6>
+        <h6>subhampreet</h6>
       </div>
 
       <div className="story__item">
@@ -71,7 +71,7 @@ function Story() {
           src="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
           className={classes.large}
         />
-        <h6>Subhampreet</h6>
+        <h6>subhampreet</h6>
       </div>
 
       <div className="story__item">
