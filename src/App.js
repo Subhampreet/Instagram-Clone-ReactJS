@@ -9,10 +9,15 @@ import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import { Input } from "@material-ui/core";
 
+import InstaEmbed from "./InstaEmbed";
+import Suggested from "./Suggested";
+
 import HomeIcon from '@material-ui/icons/Home';
 import NearMeOutlinedIcon from '@material-ui/icons/NearMeOutlined';
 import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
 import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
+
+import ImageUpload from './ImageUpload';
 
 function getModalStyle() {
   const top = 50;
@@ -235,7 +240,26 @@ function App() {
         
       </div>
 
+      <InstaEmbed />
+
+      <Suggested />
+
       <Story />
+      
+      { user?.displayName ? (
+        <ImageUpload username = {user.displayName} />
+      ) : (
+      <div className="upload_message" >
+        <h3>Login to Create a Post 🚀 !!!</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error ut perspiciatis unde omnis iste natus error perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error ut <br /><br />
+        perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error utperspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error ut
+        </p>
+        <Button onClick={() => setOpenSignIn(true)} className="upload_signInButton" color="secondary" variant="contained" >Sign In</Button>
+
+      </div>
+        
+      )}
+      
 
       {posts.map(({ id, post }) => (
         <Post
@@ -246,6 +270,8 @@ function App() {
           avatar={post.avatar}
         />
       ))}
+
+      
     </div>
   );
 }
