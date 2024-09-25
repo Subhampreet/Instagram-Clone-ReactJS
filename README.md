@@ -1,4 +1,4 @@
-# Instagram-Clone-ReactJS ⚡
+<h1 style="center"> Instagram-Clone-ReactJS ⚡</h1>
 
 <b>Instagram</b> is an American photo and video sharing social networking service owned by Facebook. This project is a Clone of the original Instagram UI. This Project provides some basic features, similar to the original application.
 
